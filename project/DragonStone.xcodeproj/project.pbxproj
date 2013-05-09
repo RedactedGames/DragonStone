@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C175E60173BE3ED00EEE6B6 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C175E5F173BE3ED00EEE6B6 /* ResourcePath.mm */; };
+		0C175E63173BE3FB00EEE6B6 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C175E61173BE3FB00EEE6B6 /* GameWindow.cpp */; };
+		0C175E68173BE4D400EEE6B6 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E67173BE4D400EEE6B6 /* Icons */; };
+		0C175E71173BE4E400EEE6B6 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E69173BE4E400EEE6B6 /* Audio */; };
+		0C175E72173BE4E400EEE6B6 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6A173BE4E400EEE6B6 /* Data */; };
+		0C175E73173BE4E400EEE6B6 /* External Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6B173BE4E400EEE6B6 /* External Libraries */; };
+		0C175E74173BE4E400EEE6B6 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6C173BE4E400EEE6B6 /* Fonts */; };
+		0C175E75173BE4E400EEE6B6 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6D173BE4E400EEE6B6 /* Icons */; };
+		0C175E76173BE4E400EEE6B6 /* Plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6E173BE4E400EEE6B6 /* Plist */; };
+		0C175E77173BE4E400EEE6B6 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6F173BE4E400EEE6B6 /* Shaders */; };
+		0C175E78173BE4E400EEE6B6 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E70173BE4E400EEE6B6 /* Textures */; };
+		0C4ADE751739B35A00AF0450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ADE741739B35A00AF0450 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C175E51173BE23900EEE6B6 /* DS_Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DS_Result.h; sourceTree = "<group>"; };
+		0C175E5E173BE3ED00EEE6B6 /* ResourcePath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		0C175E5F173BE3ED00EEE6B6 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		0C175E61173BE3FB00EEE6B6 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
+		0C175E62173BE3FB00EEE6B6 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
+		0C175E67173BE4D400EEE6B6 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icons; path = Resources/Icons; sourceTree = "<group>"; };
+		0C175E69173BE4E400EEE6B6 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Audio; path = Resources/Audio; sourceTree = "<group>"; };
+		0C175E6A173BE4E400EEE6B6 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Resources/Data; sourceTree = "<group>"; };
+		0C175E6B173BE4E400EEE6B6 /* External Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "External Libraries"; path = "Resources/External Libraries"; sourceTree = "<group>"; };
+		0C175E6C173BE4E400EEE6B6 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = Resources/Fonts; sourceTree = "<group>"; };
+		0C175E6D173BE4E400EEE6B6 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icons; path = Resources/Icons; sourceTree = "<group>"; };
+		0C175E6E173BE4E400EEE6B6 /* Plist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Plist; path = Resources/Plist; sourceTree = "<group>"; };
+		0C175E6F173BE4E400EEE6B6 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders; path = Resources/Shaders; sourceTree = "<group>"; };
+		0C175E70173BE4E400EEE6B6 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Textures; path = Resources/Textures; sourceTree = "<group>"; };
+		0C4ADE6C1739B35A00AF0450 /* DragonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4ADE701739B35A00AF0450 /* DragonStone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DragonStone-Info.plist"; path = "Resources/Plist/DragonStone-Info.plist"; sourceTree = "<group>"; };
+		0C4ADE741739B35A00AF0450 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C4ADE681739B35A00AF0450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C175E48173BE1AC00EEE6B6 /* Platform_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0C175E5E173BE3ED00EEE6B6 /* ResourcePath.hpp */,
+				0C175E5F173BE3ED00EEE6B6 /* ResourcePath.mm */,
+			);
+			path = Platform_OSX;
+			sourceTree = "<group>";
+		};
+		0C175E4C173BE1EB00EEE6B6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0C175E51173BE23900EEE6B6 /* DS_Result.h */,
+				0C175E4D173BE21B00EEE6B6 /* Window */,
+				0C175E48173BE1AC00EEE6B6 /* Platform_OSX */,
+				0C4ADE741739B35A00AF0450 /* main.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0C175E4D173BE21B00EEE6B6 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				0C175E61173BE3FB00EEE6B6 /* GameWindow.cpp */,
+				0C175E62173BE3FB00EEE6B6 /* GameWindow.h */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		0C175E66173BE4A500EEE6B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C175E69173BE4E400EEE6B6 /* Audio */,
+				0C175E6A173BE4E400EEE6B6 /* Data */,
+				0C175E6B173BE4E400EEE6B6 /* External Libraries */,
+				0C175E6C173BE4E400EEE6B6 /* Fonts */,
+				0C175E6D173BE4E400EEE6B6 /* Icons */,
+				0C175E6E173BE4E400EEE6B6 /* Plist */,
+				0C175E6F173BE4E400EEE6B6 /* Shaders */,
+				0C175E70173BE4E400EEE6B6 /* Textures */,
+				0C175E67173BE4D400EEE6B6 /* Icons */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0C4ADE621739B35A00AF0450 = {
+			isa = PBXGroup;
+			children = (
+				0C4ADE6E1739B35A00AF0450 /* DragonStone */,
+				0C4ADE6D1739B35A00AF0450 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C4ADE6D1739B35A00AF0450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C4ADE6C1739B35A00AF0450 /* DragonStone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C4ADE6E1739B35A00AF0450 /* DragonStone */ = {
+			isa = PBXGroup;
+			children = (
+				0C175E66173BE4A500EEE6B6 /* Resources */,
+				0C175E4C173BE1EB00EEE6B6 /* Source */,
+				0C4ADE6F1739B35A00AF0450 /* Supporting Files */,
+			);
+			path = DragonStone;
+			sourceTree = "<group>";
+		};
+		0C4ADE6F1739B35A00AF0450 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C4ADE701739B35A00AF0450 /* DragonStone-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C4ADE6B1739B35A00AF0450 /* DragonStone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4ADE811739B35A00AF0450 /* Build configuration list for PBXNativeTarget "DragonStone" */;
+			buildPhases = (
+				0C4ADE671739B35A00AF0450 /* Sources */,
+				0C4ADE681739B35A00AF0450 /* Frameworks */,
+				0C4ADE691739B35A00AF0450 /* Resources */,
+				0C4ADE6A1739B35A00AF0450 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragonStone;
+			productName = DragonStone;
+			productReference = 0C4ADE6C1739B35A00AF0450 /* DragonStone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C4ADE631739B35A00AF0450 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Redacted Games";
+			};
+			buildConfigurationList = 0C4ADE661739B35A00AF0450 /* Build configuration list for PBXProject "DragonStone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C4ADE621739B35A00AF0450;
+			productRefGroup = 0C4ADE6D1739B35A00AF0450 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C4ADE6B1739B35A00AF0450 /* DragonStone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C4ADE691739B35A00AF0450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C175E68173BE4D400EEE6B6 /* Icons in Resources */,
+				0C175E71173BE4E400EEE6B6 /* Audio in Resources */,
+				0C175E72173BE4E400EEE6B6 /* Data in Resources */,
+				0C175E73173BE4E400EEE6B6 /* External Libraries in Resources */,
+				0C175E74173BE4E400EEE6B6 /* Fonts in Resources */,
+				0C175E75173BE4E400EEE6B6 /* Icons in Resources */,
+				0C175E76173BE4E400EEE6B6 /* Plist in Resources */,
+				0C175E77173BE4E400EEE6B6 /* Shaders in Resources */,
+				0C175E78173BE4E400EEE6B6 /* Textures in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4ADE6A1739B35A00AF0450 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required sfml dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# Are we building a project that uses framework or dylibs ?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert : not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $1 is a path\n{\n    test $# -eq 1\n    assert $? \"force_remove() requires one parameter\"\n    rm -fr \"$1\"\n    assert $? \"couldn't remove $1\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Frameworks\"\n    \n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1.2.dylib\"\n        force_remove \"$dest/libsfml-$1-d.2.dylib\"\n        force_remove \"$dest/sfml-$1.framework\"\n    \n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            copy \"/Library/Frameworks/sfml-$1.framework\" \"$dest/sfml-$1.framework\"\n        elif [ $CONFIGURATION = \"Debug\" ] && [ $SFML_LINK_DYLIBS_SUFFIX_DEBUG != \"\" ]\n        then\n            copy \"/usr/local/lib/libsfml-$1-d.2.dylib\" \"$dest/libsfml-$1-d.2.dylib\"\n        else\n            copy \"/usr/local/lib/libsfml-$1.2.dylib\" \"$dest/libsfml-$1.2.dylib\"\n        fi\n        \n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy sndfile framework too\n            copy \"/Library/Frameworks/sndfile.framework\" \"$dest/sndfile.framework\"\n        fi\n\n        if [ \"$1\" = \"graphics\" ]\n        then\n            # copy freetype framework too\n            copy \"/Library/Frameworks/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C4ADE671739B35A00AF0450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4ADE751739B35A00AF0450 /* main.cpp in Sources */,
+				0C175E60173BE3ED00EEE6B6 /* ResourcePath.mm in Sources */,
+				0C175E63173BE3FB00EEE6B6 /* GameWindow.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C4ADE7F1739B35A00AF0450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX)sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		0C4ADE801739B35A00AF0450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX)sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX)sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework ";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX)sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX)sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX)sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		0C4ADE821739B35A00AF0450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DragonStone/Resources/Plist/DragonStone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C4ADE831739B35A00AF0450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DragonStone/Resources/Plist/DragonStone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C4ADE661739B35A00AF0450 /* Build configuration list for PBXProject "DragonStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4ADE7F1739B35A00AF0450 /* Debug */,
+				0C4ADE801739B35A00AF0450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4ADE811739B35A00AF0450 /* Build configuration list for PBXNativeTarget "DragonStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4ADE821739B35A00AF0450 /* Debug */,
+				0C4ADE831739B35A00AF0450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C4ADE631739B35A00AF0450 /* Project object */;
+}
