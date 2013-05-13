@@ -1,32 +1,22 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
+#include "Config.h"
+#include "Result.h"
+#include "Window/GameWindow.h"
+#include "Games/TestApplication/TestApplication.h"
 
-#ifdef SFML_DEBUG
-	#define DS_DEBUG
-#elif
-	#define DS_RELEASE
-#endif
-
-#ifdef SFML_SYSTEM_WINDOWS
+#ifdef DS_PLATFORM_WINDOWS
 	#include "Platform_Windows/ResourcePath.h"
 #endif
 
-#ifdef SFML_SYSTEM_MACOS
+#ifdef DS_PLATFORM_MACOS
 	#include "Platform_OSX/ResourcePath.hpp"
 #endif
 
-#ifdef SFML_SYSTEM_LINUX
+#ifdef DS_PLATFORM_LINUX
 	#include "Platform_LINUX/ResourcePath.h"
 #endif
-
-#include "DS_Result.h"
-#include "Window/GameWindow.h"
-
-std::string gameName()
-{
-	return "DragonStone";
-}
 
 int main(int argc, char *argv[])
 {
@@ -36,53 +26,77 @@ int main(int argc, char *argv[])
 	//Parse command line parameters.
 	//#TODO parse command line parameters.
 
+	//Create the game window.
 	GameWindow gameWindow;
 
 	//Initalize the window with the default variables.
 	gameWindow.initialize();
 
-	//Create game variable, pass in window.
-	//IGame game = new YourGameName(gameWindow);
+	//Create game variable.
+	IGame* game = new TestApplication();
+	
+	//Initalize game, pass in window.
+	game->Initalize(gameWindow);
 
-	//Set game icon.
-	//gameWindow.setIcon(game.getIconPath());
-
-	//Store a pointer to the gameWindow to cut down function calls.
-	sf::RenderWindow* window = gameWindow.getWindow();
-
+	double deltaTime = 0.0;
+	
+	// Load a music to play
+    sf::Music music;
+    if (!music.openFromFile(resourcePath() + "Audio/nice_music.ogg")) {
+        return EXIT_FAILURE;
+    }
+	
+    // Play the music
+    music.play();
+	
 	//Game Loop
-	while(window->isOpen())
+	while(gameWindow.isOpen())
     {
+		gameWindow.getWindow()->clear();
+		
 		// Process events
         sf::Event event;
-        while (window->pollEvent(event))
+        while (gameWindow.pollEvent(event))
         {
-            // Close window : exit
-            if (event.type == sf::Event::Closed)
+			switch(event.type)
 			{
-                window->close();
-            }
-
-			//Send event to game.
-			//game->pollEvent(event);
+				case sf::Event::Closed:
+				{
+					game->Shutdown();
+					gameWindow.close();
+					break;
+				}
+				
+				case sf::Event::Resized:
+				{
+					//event.size.width;
+					//event.size.height;
+					break;
+				}
+				
+				case sf::Event::LostFocus:
+				{
+					gameWindow.setFocus(false);
+					break;
+				}
+				
+				case sf::Event::GainedFocus:
+				{
+					gameWindow.setFocus(true);
+					break;
+				}
+				
+				default:
+				{
+					//#TODO: Input Manager
+					game->pollEvent(event);
+					break;
+				}
+			}
         }
-
-		//Check for input.
-		//game->Input(_deltaTime);
-
-		//Update the game objects.
-		//game->Update(_deltaTime);
-
-		//Render the game.
-		//{
-        //	Clear screen
-			window->clear();
-
-			//game->Render(_deltaTime);
-
-        //	Update the window
-			window->display();
-		//}
+		
+		game->Execute(deltaTime);
+		gameWindow.getWindow()->display();
 	}
 
 	/*
@@ -152,5 +166,5 @@ int main(int argc, char *argv[])
 
 	*/
     
-    return DS_OK;
+    return DragonStone::OK;
 }

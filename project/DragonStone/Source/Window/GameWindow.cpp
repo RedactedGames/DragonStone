@@ -1,12 +1,13 @@
 #include "GameWindow.h"
 
-GameWindow::GameWindow(void) : window(sf::VideoMode(800, 600), "Temp")
+GameWindow::GameWindow(void) : window(sf::VideoMode(800, 600), "Temp", sf::Style::Titlebar | sf::Style::Close)
 {
 	this->x = 0;
 	this->y = 0;
 	this->width = 800;
 	this->height = 600;
 	this->vsync = true;
+	this->focus = true;
 	this->framerateLimit = 60;
 	this->title = "DragonStone";
 }
@@ -26,15 +27,15 @@ void GameWindow::initialize(void)
 }
 
 //Setters
-const DS_RESULT GameWindow::setIcon(const std::string _iconPath)
+const DragonStone::RESULT GameWindow::setIcon(const std::string _iconPath)
 {
 	sf::Image icon;
     if (!icon.loadFromFile(_iconPath)) {
-        return DS_ERROR_FAILEDTOLOADRESOURCE_ICON;
+        return DragonStone::ERROR_FAILEDTOLOADRESOURCE_ICON;
     }
 	else
 	{
 		this->window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
-		return DS_OK;
+		return DragonStone::OK;
 	}
 }

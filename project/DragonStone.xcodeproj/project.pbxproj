@@ -19,10 +19,12 @@
 		0C175E77173BE4E400EEE6B6 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6F173BE4E400EEE6B6 /* Shaders */; };
 		0C175E78173BE4E400EEE6B6 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E70173BE4E400EEE6B6 /* Textures */; };
 		0C4ADE751739B35A00AF0450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ADE741739B35A00AF0450 /* main.cpp */; };
+		0C4E128B1740953E00A8E4BE /* TestApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E128A1740953E00A8E4BE /* TestApplication.cpp */; };
+		0C4E128D1740980D00A8E4BE /* IGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E128C1740980D00A8E4BE /* IGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C175E51173BE23900EEE6B6 /* DS_Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DS_Result.h; sourceTree = "<group>"; };
+		0C175E51173BE23900EEE6B6 /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
 		0C175E5E173BE3ED00EEE6B6 /* ResourcePath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		0C175E5F173BE3ED00EEE6B6 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		0C175E61173BE3FB00EEE6B6 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
@@ -39,6 +41,11 @@
 		0C4ADE6C1739B35A00AF0450 /* DragonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4ADE701739B35A00AF0450 /* DragonStone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DragonStone-Info.plist"; path = "Resources/Plist/DragonStone-Info.plist"; sourceTree = "<group>"; };
 		0C4ADE741739B35A00AF0450 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0C4E12881740952400A8E4BE /* IGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGame.h; sourceTree = "<group>"; };
+		0C4E12891740953200A8E4BE /* TestApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestApplication.h; sourceTree = "<group>"; };
+		0C4E128A1740953E00A8E4BE /* TestApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestApplication.cpp; sourceTree = "<group>"; };
+		0C4E128C1740980D00A8E4BE /* IGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IGame.cpp; sourceTree = "<group>"; };
+		0C64ABE01741876700379DD3 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +71,14 @@
 		0C175E4C173BE1EB00EEE6B6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0C175E51173BE23900EEE6B6 /* DS_Result.h */,
+				0C64ABDF1741846A00379DD3 /* Input */,
+				0C4E12861740950400A8E4BE /* Games */,
+				0C4E128117408B7100A8E4BE /* Interfaces */,
+				0C175E51173BE23900EEE6B6 /* Result.h */,
 				0C175E4D173BE21B00EEE6B6 /* Window */,
 				0C175E48173BE1AC00EEE6B6 /* Platform_OSX */,
 				0C4ADE741739B35A00AF0450 /* main.cpp */,
+				0C64ABE01741876700379DD3 /* Config.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -129,6 +140,39 @@
 				0C4ADE701739B35A00AF0450 /* DragonStone-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C4E128117408B7100A8E4BE /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				0C4E12881740952400A8E4BE /* IGame.h */,
+				0C4E128C1740980D00A8E4BE /* IGame.cpp */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		0C4E12861740950400A8E4BE /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				0C4E12871740951000A8E4BE /* TestApplication */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		0C4E12871740951000A8E4BE /* TestApplication */ = {
+			isa = PBXGroup;
+			children = (
+				0C4E12891740953200A8E4BE /* TestApplication.h */,
+				0C4E128A1740953E00A8E4BE /* TestApplication.cpp */,
+			);
+			path = TestApplication;
+			sourceTree = "<group>";
+		};
+		0C64ABDF1741846A00379DD3 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +265,8 @@
 				0C4ADE751739B35A00AF0450 /* main.cpp in Sources */,
 				0C175E60173BE3ED00EEE6B6 /* ResourcePath.mm in Sources */,
 				0C175E63173BE3FB00EEE6B6 /* GameWindow.cpp in Sources */,
+				0C4E128B1740953E00A8E4BE /* TestApplication.cpp in Sources */,
+				0C4E128D1740980D00A8E4BE /* IGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
