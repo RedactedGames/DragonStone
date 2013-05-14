@@ -3,7 +3,7 @@
 //  DragonStone
 //
 //  Created by Joseph Stuhr on 5/12/13.
-//  Copyright (c) 2013 Redacted Games. All rights reserved.
+//  Copyright (c) 2013 [Redacted] Games. All rights reserved.
 //
 
 #include "TestApplication.h"

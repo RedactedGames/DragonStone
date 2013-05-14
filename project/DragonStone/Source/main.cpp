@@ -15,7 +15,7 @@
  * 0=====0===============================================================0=====0
  * | License:                                                                  |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
- * | DragonStone - Copyright (c) [Redacted Games]                              |
+ * | DragonStone - Copyright (c) 2013 [Redacted] Games. All rights reserved.   |
  * |                                                                           |
  * | This software is provided 'as-is', without any express or implied warranty|
  * | In no event will the authors be held liable for any damages arising from  |
@@ -89,8 +89,8 @@ int main(int _argc, char* _argv[])
 		gameWindow.clear();
 		
 		// Process events
-        sf::Event event;
-        while (gameWindow.pollEvent(event))
+		sf::Event event;
+		while (gameWindow.pollEvent(event))
 		{
 			switch(event.type)
 			{
@@ -127,7 +127,7 @@ int main(int _argc, char* _argv[])
 					break;
 				}
 			}
-        }
+		}
 		
 		game->Execute(deltaTime);
 		gameWindow.display();
