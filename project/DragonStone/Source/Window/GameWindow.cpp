@@ -85,11 +85,6 @@ bool GameWindow::pollEvent(sf::Event& _event)
  * | Getters                                                                   |
  * 0===========================================================================0
  */
-
-sf::RenderWindow* GameWindow::getWindow()
-{
-	return this->window;
-}
  
 const int GameWindow::getX(void) const
 {

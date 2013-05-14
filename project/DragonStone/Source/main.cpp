@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 	bool running = true;
 	while(running)
     {
-		gameWindow.getWindow()->clear();
+		gameWindow.clear();
 		
 		// Process events
         sf::Event event;
@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
         }
 		
 		game->Execute(deltaTime);
-		gameWindow.getWindow()->display();
+		gameWindow.display();
 	}
 
 	/*

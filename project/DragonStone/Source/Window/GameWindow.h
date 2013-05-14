@@ -48,7 +48,6 @@ class GameWindow
  *      | Getters                                                              |
  *      0======================================================================0
  */
-		sf::RenderWindow* getWindow();
 		const int getX(void) const;
 		const int getY(void) const;
 		const sf::Vector2i getPosition(void) const;
