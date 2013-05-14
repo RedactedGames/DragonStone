@@ -2,5 +2,5 @@
 *.DS_Store
 
 #Windows
-project/x64/
-project/DragonStone/x64/
+Project/x64/
+Project/DragonStone/x64/
