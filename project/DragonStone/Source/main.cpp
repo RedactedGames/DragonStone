@@ -15,6 +15,8 @@
  * 0=====0===============================================================0=====0
  * | License:                                                                  |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
+ * | DragonStone - Copyright (c) [Redacted Games]                              |
+ * |                                                                           |
  * | This software is provided 'as-is', without any express or implied warranty|
  * | In no event will the authors be held liable for any damages arising from  |
  * | the use of this software.                                                 |
@@ -83,13 +85,13 @@ int main(int _argc, char* _argv[])
 	//Game Loop
 	bool running = true;
 	while(running)
-    {
+	{
 		gameWindow.clear();
 		
 		// Process events
         sf::Event event;
         while (gameWindow.pollEvent(event))
-        {
+		{
 			switch(event.type)
 			{
 				case sf::Event::Closed:
