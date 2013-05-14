@@ -1,16 +1,29 @@
+/*
+ * 0===========================================================================0
+ * | GameWindow.h                                                              |
+ * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
+ * |   Author        : Joseph Stuhr                                            |
+ * |   E-mail        : JpDeathBlade@gmail.com                                  |
+ * 0=====0===============================================================0=====0
+ *       |                                                               |
+ * 0=====0===============================================================0=====0
+ * | Code Description:                                                         |
+ * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
+ * |   Wrapper that controls the application window.                           |
+ * 0===========================================================================0
+ */
+
 #ifndef  DRAGONSTONE_GAMEWINDOW_H_		// Check to see if this .h is defined
 #define  DRAGONSTONE_GAMEWINDOW_H_		//  if not, define it
 
 #include <SFML/Graphics.hpp>
-#include <string>
+#include <SFML/OpenGL.hpp>
 #include "../Result.h"
 
 class GameWindow
 {
 	private:
-		sf::RenderWindow window;
-
-	protected:
+		sf::RenderWindow* window;
 		int x;
 		int y;
 		unsigned int width;
@@ -22,27 +35,50 @@ class GameWindow
 
 	public:
 		GameWindow(void);
+		GameWindow(const GameWindow& _ref);
+		GameWindow& operator=(const GameWindow& _ref);
 		~GameWindow(void);
 
 		void initialize(void);	//#TODO: add params
-		
-		const bool isOpen(void) const { return this->window.isOpen(); }
-		void close(void) { return this->window.close(); }
-		void clear(void) { return this->window.clear(); }
-		void display(void) { return this->window.display(); }
-		bool pollEvent(sf::Event& _event) { return this->window.pollEvent(_event); }
+		void clear(void);
+		void display(void);
+		bool pollEvent(sf::Event& _event);
 
-		//Getters
-		sf::RenderWindow* getWindow() { return &this->window; };
-		const sf::Vector2u getSize() const { return this->window.getSize(); }
-		
-		const bool getFocus(void) const { return this->focus; }
+/*      0======================================================================0
+ *      | Getters                                                              |
+ *      0======================================================================0
+ */
+		sf::RenderWindow* getWindow();
+		const int getX(void) const;
+		const int getY(void) const;
+		const sf::Vector2i getPosition(void) const;
+		const unsigned int getWidth(void) const;
+		const unsigned int getHeight(void) const;
+		const sf::Vector2u getSize() const;
+		const int getFramerateLimit(void) const;
+		const bool hasFocus(void) const;
+		const bool isVsync(void) const;
+		const std::string getTitle(void) const;
+		const bool isOpen(void) const;
 
-		//Setters
+/*      0======================================================================0
+ *      | Setters                                                              |
+ *      0======================================================================0
+ */
 		const DragonStone::RESULT setIcon(const std::string _iconPath);
-		void setTitle(const std::string _title) { this->window.setTitle(_title); }
-		
-		void setFocus(const bool _focus) { this->focus = _focus; };
+		void setX(const int _x);
+		void setY(const int _y);
+		void setPosition(const sf::Vector2i _position);
+		void setWidth(const unsigned int _width);
+		void setHeight(const unsigned int _height);
+		void setSize(const sf::Vector2u _size);
+		void setFramerateLimit(const int _framerate);
+		void setFocus(const bool _focus);
+		void setVsync(const bool _vsync);
+		void setTitle(const std::string _title);
+		void setVisible(const bool _visible);
+		void setMouseCursorVisible(const bool _visible);
+		void setActive(const bool _active);
 };
 
 #endif //DRAGONSTONE_GAMEWINDOW_H_

@@ -50,7 +50,8 @@ int main(int argc, char *argv[])
     music.play();
 	
 	//Game Loop
-	while(gameWindow.isOpen())
+	bool running = true;
+	while(running)
     {
 		gameWindow.getWindow()->clear();
 		
@@ -63,7 +64,7 @@ int main(int argc, char *argv[])
 				case sf::Event::Closed:
 				{
 					game->Shutdown();
-					gameWindow.close();
+					running = false;
 					break;
 				}
 				

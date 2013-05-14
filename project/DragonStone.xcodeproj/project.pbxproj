@@ -14,13 +14,13 @@
 		0C175E72173BE4E400EEE6B6 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6A173BE4E400EEE6B6 /* Data */; };
 		0C175E73173BE4E400EEE6B6 /* External Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6B173BE4E400EEE6B6 /* External Libraries */; };
 		0C175E74173BE4E400EEE6B6 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6C173BE4E400EEE6B6 /* Fonts */; };
-		0C175E75173BE4E400EEE6B6 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6D173BE4E400EEE6B6 /* Icons */; };
 		0C175E76173BE4E400EEE6B6 /* Plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6E173BE4E400EEE6B6 /* Plist */; };
 		0C175E77173BE4E400EEE6B6 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6F173BE4E400EEE6B6 /* Shaders */; };
 		0C175E78173BE4E400EEE6B6 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E70173BE4E400EEE6B6 /* Textures */; };
 		0C4ADE751739B35A00AF0450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ADE741739B35A00AF0450 /* main.cpp */; };
 		0C4E128B1740953E00A8E4BE /* TestApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E128A1740953E00A8E4BE /* TestApplication.cpp */; };
 		0C4E128D1740980D00A8E4BE /* IGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E128C1740980D00A8E4BE /* IGame.cpp */; };
+		0C64ABE21741DA1600379DD3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64ABE11741DA1600379DD3 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +46,7 @@
 		0C4E128A1740953E00A8E4BE /* TestApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestApplication.cpp; sourceTree = "<group>"; };
 		0C4E128C1740980D00A8E4BE /* IGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IGame.cpp; sourceTree = "<group>"; };
 		0C64ABE01741876700379DD3 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		0C64ABE11741DA1600379DD3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C64ABE21741DA1600379DD3 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,7 @@
 		0C4ADE621739B35A00AF0450 = {
 			isa = PBXGroup;
 			children = (
+				0C64ABE11741DA1600379DD3 /* OpenGL.framework */,
 				0C4ADE6E1739B35A00AF0450 /* DragonStone */,
 				0C4ADE6D1739B35A00AF0450 /* Products */,
 			);
@@ -232,7 +235,6 @@
 				0C175E72173BE4E400EEE6B6 /* Data in Resources */,
 				0C175E73173BE4E400EEE6B6 /* External Libraries in Resources */,
 				0C175E74173BE4E400EEE6B6 /* Fonts in Resources */,
-				0C175E75173BE4E400EEE6B6 /* Icons in Resources */,
 				0C175E76173BE4E400EEE6B6 /* Plist in Resources */,
 				0C175E77173BE4E400EEE6B6 /* Shaders in Resources */,
 				0C175E78173BE4E400EEE6B6 /* Textures in Resources */,
