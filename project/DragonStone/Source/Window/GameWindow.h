@@ -53,7 +53,7 @@ class GameWindow
 		const sf::Vector2i getPosition(void) const;
 		const unsigned int getWidth(void) const;
 		const unsigned int getHeight(void) const;
-		const sf::Vector2u getSize() const;
+		const sf::Vector2u getSize(void) const;
 		const int getFramerateLimit(void) const;
 		const bool hasFocus(void) const;
 		const bool isVsync(void) const;
