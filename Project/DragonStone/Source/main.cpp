@@ -47,7 +47,7 @@
 #include "Config.h"
 #include "Result.h"
 #include "Window/GameWindow.h"
-#include "Games/TestApplication/TestApplication.h"
+#include "Games/ExampleApplication/ExampleApplication.h"
 
 #ifdef DS_PLATFORM_WINDOWS
 	#include "Platform_Windows/ResourcePath.h"
@@ -75,7 +75,7 @@ int main(int _argc, char* _argv[])
 	gameWindow.initialize();
 
 	//Create game variable.
-	IGame* game = new TestApplication();
+	IGame* game = new ExampleApplication();
 	
 	//Initalize game, pass in window.
 	game->Initalize(gameWindow);

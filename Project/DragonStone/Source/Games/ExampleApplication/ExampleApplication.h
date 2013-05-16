@@ -1,16 +1,16 @@
-#ifndef  DRAGONSTONE_TESTAPPLICATION_H_		// Check to see if this .h is defined
-#define  DRAGONSTONE_TESTAPPLICATION_H_		//  if not, define it
+#ifndef  DRAGONSTONE_EXAMPLEAPPLICATION_H_		// Check to see if this .h is defined
+#define  DRAGONSTONE_EXAMPLEAPPLICATION_H_		//  if not, define it
 
 #include <string>
 #include "../../Interfaces/IGame.h"
 
-class TestApplication : public IGame
+class ExampleApplication : public IGame
 {
 	public:
-		TestApplication(void);
-		TestApplication(const TestApplication& _ref);
-		TestApplication& operator=(const TestApplication& _ref);
-		~TestApplication(void);
+		ExampleApplication(void);
+		ExampleApplication(const ExampleApplication& _ref);
+		ExampleApplication& operator=(const ExampleApplication& _ref);
+		~ExampleApplication(void);
 		
 		const bool Initalize(GameWindow& _gameWindow);
 		const bool Shutdown(void);
@@ -23,4 +23,4 @@ class TestApplication : public IGame
 		const bool Render(const double _deltaTime);
 };
 
-#endif //DRAGONSTONE_TESTAPPLICATION_H_
+#endif //DRAGONSTONE_EXAMPLEAPPLICATION_H_

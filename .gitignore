@@ -4,3 +4,8 @@
 #Windows
 Project/x64/
 Project/DragonStone/x64/
+
+#Ignore all game files
+Project/DragonStone/Source/Games/*
+#Except...
+!Project/DragonStone/Source/Games/ExampleApplication/
