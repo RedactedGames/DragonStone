@@ -80,13 +80,18 @@ int main(int _argc, char* _argv[])
 	//Initalize game, pass in window.
 	game->Initalize(gameWindow);
 
-	double deltaTime = 0.0;
+	//Create a clock to calculate deltaTime.
+	sf::Clock clock;
 	
 	//Game Loop
 	bool running = true;
 	while(running)
 	{
 		gameWindow.clear();
+		
+		//Get the elapsed time.
+		sf::Time elapsed = clock.restart();
+		double deltaTime = (elapsed.asMilliseconds() * 0.001);
 		
 		// Process events
 		sf::Event event;
@@ -103,8 +108,7 @@ int main(int _argc, char* _argv[])
 				
 				case sf::Event::Resized:
 				{
-					//event.size.width;
-					//event.size.height;
+					gameWindow.setSize(sf::Vector2u(event.size.width, event.size.height));
 					break;
 				}
 				

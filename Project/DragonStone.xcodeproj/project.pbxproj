@@ -10,14 +10,14 @@
 		0C1634A417451CF800268D69 /* ExampleApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C1634A217451CF800268D69 /* ExampleApplication.cpp */; };
 		0C175E60173BE3ED00EEE6B6 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C175E5F173BE3ED00EEE6B6 /* ResourcePath.mm */; };
 		0C175E63173BE3FB00EEE6B6 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C175E61173BE3FB00EEE6B6 /* GameWindow.cpp */; };
-		0C175E68173BE4D400EEE6B6 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E67173BE4D400EEE6B6 /* Icons */; };
-		0C175E71173BE4E400EEE6B6 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E69173BE4E400EEE6B6 /* Audio */; };
-		0C175E72173BE4E400EEE6B6 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6A173BE4E400EEE6B6 /* Data */; };
-		0C175E73173BE4E400EEE6B6 /* External Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6B173BE4E400EEE6B6 /* External Libraries */; };
-		0C175E74173BE4E400EEE6B6 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6C173BE4E400EEE6B6 /* Fonts */; };
-		0C175E76173BE4E400EEE6B6 /* Plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6E173BE4E400EEE6B6 /* Plist */; };
-		0C175E77173BE4E400EEE6B6 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E6F173BE4E400EEE6B6 /* Shaders */; };
-		0C175E78173BE4E400EEE6B6 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 0C175E70173BE4E400EEE6B6 /* Textures */; };
+		0C47DC1317469FEE00706BC0 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC0B17469FEE00706BC0 /* Audio */; };
+		0C47DC1417469FEE00706BC0 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC0C17469FEE00706BC0 /* Data */; };
+		0C47DC1517469FEE00706BC0 /* External Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC0D17469FEE00706BC0 /* External Libraries */; };
+		0C47DC1617469FEE00706BC0 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC0E17469FEE00706BC0 /* Fonts */; };
+		0C47DC1717469FEE00706BC0 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC0F17469FEE00706BC0 /* Icons */; };
+		0C47DC1817469FEE00706BC0 /* Plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC1017469FEE00706BC0 /* Plist */; };
+		0C47DC1917469FEE00706BC0 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC1117469FEE00706BC0 /* Shaders */; };
+		0C47DC1A17469FEE00706BC0 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC1217469FEE00706BC0 /* Textures */; };
 		0C4ADE751739B35A00AF0450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ADE741739B35A00AF0450 /* main.cpp */; };
 		0C4E128D1740980D00A8E4BE /* IGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E128C1740980D00A8E4BE /* IGame.cpp */; };
 		0C64ABE21741DA1600379DD3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64ABE11741DA1600379DD3 /* OpenGL.framework */; };
@@ -31,15 +31,14 @@
 		0C175E5F173BE3ED00EEE6B6 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		0C175E61173BE3FB00EEE6B6 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
 		0C175E62173BE3FB00EEE6B6 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
-		0C175E67173BE4D400EEE6B6 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icons; path = Resources/Icons; sourceTree = "<group>"; };
-		0C175E69173BE4E400EEE6B6 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Audio; path = Resources/Audio; sourceTree = "<group>"; };
-		0C175E6A173BE4E400EEE6B6 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = Resources/Data; sourceTree = "<group>"; };
-		0C175E6B173BE4E400EEE6B6 /* External Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "External Libraries"; path = "Resources/External Libraries"; sourceTree = "<group>"; };
-		0C175E6C173BE4E400EEE6B6 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = Resources/Fonts; sourceTree = "<group>"; };
-		0C175E6D173BE4E400EEE6B6 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icons; path = Resources/Icons; sourceTree = "<group>"; };
-		0C175E6E173BE4E400EEE6B6 /* Plist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Plist; path = Resources/Plist; sourceTree = "<group>"; };
-		0C175E6F173BE4E400EEE6B6 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shaders; path = Resources/Shaders; sourceTree = "<group>"; };
-		0C175E70173BE4E400EEE6B6 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Textures; path = Resources/Textures; sourceTree = "<group>"; };
+		0C47DC0B17469FEE00706BC0 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		0C47DC0C17469FEE00706BC0 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		0C47DC0D17469FEE00706BC0 /* External Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "External Libraries"; sourceTree = "<group>"; };
+		0C47DC0E17469FEE00706BC0 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		0C47DC0F17469FEE00706BC0 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
+		0C47DC1017469FEE00706BC0 /* Plist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plist; sourceTree = "<group>"; };
+		0C47DC1117469FEE00706BC0 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
+		0C47DC1217469FEE00706BC0 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
 		0C4ADE6C1739B35A00AF0450 /* DragonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4ADE701739B35A00AF0450 /* DragonStone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DragonStone-Info.plist"; path = "Resources/Plist/DragonStone-Info.plist"; sourceTree = "<group>"; };
 		0C4ADE741739B35A00AF0450 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		0C175E4C173BE1EB00EEE6B6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0C47DC0817469F8C00706BC0 /* Utilities */,
 				0C64ABDF1741846A00379DD3 /* Input */,
 				0C4E12861740950400A8E4BE /* Games */,
 				0C4E128117408B7100A8E4BE /* Interfaces */,
@@ -106,17 +106,39 @@
 		0C175E66173BE4A500EEE6B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0C175E69173BE4E400EEE6B6 /* Audio */,
-				0C175E6A173BE4E400EEE6B6 /* Data */,
-				0C175E6B173BE4E400EEE6B6 /* External Libraries */,
-				0C175E6C173BE4E400EEE6B6 /* Fonts */,
-				0C175E6D173BE4E400EEE6B6 /* Icons */,
-				0C175E6E173BE4E400EEE6B6 /* Plist */,
-				0C175E6F173BE4E400EEE6B6 /* Shaders */,
-				0C175E70173BE4E400EEE6B6 /* Textures */,
-				0C175E67173BE4D400EEE6B6 /* Icons */,
+				0C47DC0B17469FEE00706BC0 /* Audio */,
+				0C47DC0C17469FEE00706BC0 /* Data */,
+				0C47DC0D17469FEE00706BC0 /* External Libraries */,
+				0C47DC0E17469FEE00706BC0 /* Fonts */,
+				0C47DC0F17469FEE00706BC0 /* Icons */,
+				0C47DC1017469FEE00706BC0 /* Plist */,
+				0C47DC1117469FEE00706BC0 /* Shaders */,
+				0C47DC1217469FEE00706BC0 /* Textures */,
 			);
-			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C47DC0817469F8C00706BC0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0C47DC0A17469FAD00706BC0 /* Debugger */,
+				0C47DC0917469F9300706BC0 /* CodeProfiler */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0C47DC0917469F9300706BC0 /* CodeProfiler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeProfiler;
+			sourceTree = "<group>";
+		};
+		0C47DC0A17469FAD00706BC0 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Debugger;
 			sourceTree = "<group>";
 		};
 		0C4ADE621739B35A00AF0450 = {
@@ -230,14 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C175E68173BE4D400EEE6B6 /* Icons in Resources */,
-				0C175E71173BE4E400EEE6B6 /* Audio in Resources */,
-				0C175E72173BE4E400EEE6B6 /* Data in Resources */,
-				0C175E73173BE4E400EEE6B6 /* External Libraries in Resources */,
-				0C175E74173BE4E400EEE6B6 /* Fonts in Resources */,
-				0C175E76173BE4E400EEE6B6 /* Plist in Resources */,
-				0C175E77173BE4E400EEE6B6 /* Shaders in Resources */,
-				0C175E78173BE4E400EEE6B6 /* Textures in Resources */,
+				0C47DC1317469FEE00706BC0 /* Audio in Resources */,
+				0C47DC1417469FEE00706BC0 /* Data in Resources */,
+				0C47DC1517469FEE00706BC0 /* External Libraries in Resources */,
+				0C47DC1617469FEE00706BC0 /* Fonts in Resources */,
+				0C47DC1717469FEE00706BC0 /* Icons in Resources */,
+				0C47DC1817469FEE00706BC0 /* Plist in Resources */,
+				0C47DC1917469FEE00706BC0 /* Shaders in Resources */,
+				0C47DC1A17469FEE00706BC0 /* Textures in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "DragonStone/Resources/Plist/DragonStone-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -391,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "DragonStone/Resources/Plist/DragonStone-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
