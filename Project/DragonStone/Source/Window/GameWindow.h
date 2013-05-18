@@ -59,6 +59,8 @@ class GameWindow
 		const bool isVsync(void) const;
 		const std::string getTitle(void) const;
 		const bool isOpen(void) const;
+		
+		const sf::RenderWindow* getWindow(void) const;
 
 /*      0======================================================================0
  *      | Setters                                                              |

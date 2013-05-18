@@ -18,8 +18,7 @@
 		0C47DC1817469FEE00706BC0 /* Plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC1017469FEE00706BC0 /* Plist */; };
 		0C47DC1917469FEE00706BC0 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC1117469FEE00706BC0 /* Shaders */; };
 		0C47DC1A17469FEE00706BC0 /* Textures in Resources */ = {isa = PBXBuildFile; fileRef = 0C47DC1217469FEE00706BC0 /* Textures */; };
-		0C47DC1D1746AC9500706BC0 /* InputEventManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C47DC1B1746AC9500706BC0 /* InputEventManager.cpp */; };
-		0C47DC201746E02500706BC0 /* InputEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C47DC1E1746E02500706BC0 /* InputEvent.cpp */; };
+		0C47DC1D1746AC9500706BC0 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C47DC1B1746AC9500706BC0 /* InputManager.cpp */; };
 		0C4ADE751739B35A00AF0450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ADE741739B35A00AF0450 /* main.cpp */; };
 		0C4E128D1740980D00A8E4BE /* IGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E128C1740980D00A8E4BE /* IGame.cpp */; };
 		0C64ABE21741DA1600379DD3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64ABE11741DA1600379DD3 /* OpenGL.framework */; };
@@ -41,10 +40,9 @@
 		0C47DC1017469FEE00706BC0 /* Plist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plist; sourceTree = "<group>"; };
 		0C47DC1117469FEE00706BC0 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
 		0C47DC1217469FEE00706BC0 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Textures; sourceTree = "<group>"; };
-		0C47DC1B1746AC9500706BC0 /* InputEventManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputEventManager.cpp; sourceTree = "<group>"; };
-		0C47DC1C1746AC9500706BC0 /* InputEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputEventManager.h; sourceTree = "<group>"; };
-		0C47DC1E1746E02500706BC0 /* InputEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputEvent.cpp; sourceTree = "<group>"; };
-		0C47DC1F1746E02500706BC0 /* InputEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputEvent.h; sourceTree = "<group>"; };
+		0C47DC1B1746AC9500706BC0 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		0C47DC1C1746AC9500706BC0 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		0C47DC2617472B3400706BC0 /* MouseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseButton.h; sourceTree = "<group>"; };
 		0C4ADE6C1739B35A00AF0450 /* DragonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4ADE701739B35A00AF0450 /* DragonStone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DragonStone-Info.plist"; path = "Resources/Plist/DragonStone-Info.plist"; sourceTree = "<group>"; };
 		0C4ADE741739B35A00AF0450 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -87,6 +85,7 @@
 		0C175E4C173BE1EB00EEE6B6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0C47DC251747248300706BC0 /* Math */,
 				0C47DC0817469F8C00706BC0 /* Utilities */,
 				0C64ABDF1741846A00379DD3 /* Input */,
 				0C4E12861740950400A8E4BE /* Games */,
@@ -147,6 +146,13 @@
 			path = Debugger;
 			sourceTree = "<group>";
 		};
+		0C47DC251747248300706BC0 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
 		0C4ADE621739B35A00AF0450 = {
 			isa = PBXGroup;
 			children = (
@@ -202,10 +208,9 @@
 		0C64ABDF1741846A00379DD3 /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				0C47DC1B1746AC9500706BC0 /* InputEventManager.cpp */,
-				0C47DC1C1746AC9500706BC0 /* InputEventManager.h */,
-				0C47DC1E1746E02500706BC0 /* InputEvent.cpp */,
-				0C47DC1F1746E02500706BC0 /* InputEvent.h */,
+				0C47DC1B1746AC9500706BC0 /* InputManager.cpp */,
+				0C47DC1C1746AC9500706BC0 /* InputManager.h */,
+				0C47DC2617472B3400706BC0 /* MouseButton.h */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -301,8 +306,7 @@
 				0C175E60173BE3ED00EEE6B6 /* ResourcePath.mm in Sources */,
 				0C175E63173BE3FB00EEE6B6 /* GameWindow.cpp in Sources */,
 				0C4E128D1740980D00A8E4BE /* IGame.cpp in Sources */,
-				0C47DC1D1746AC9500706BC0 /* InputEventManager.cpp in Sources */,
-				0C47DC201746E02500706BC0 /* InputEvent.cpp in Sources */,
+				0C47DC1D1746AC9500706BC0 /* InputManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

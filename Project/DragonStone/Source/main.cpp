@@ -46,8 +46,7 @@
 #include <SFML/Network.hpp>
 #include "Config.h"
 #include "Result.h"
-#include "Input/InputEvent.h"
-#include "Input/InputEventManager.h"
+#include "Input/InputManager.h"
 #include "Window/GameWindow.h"
 
 #include "Games/ExampleApplication/ExampleApplication.h"
@@ -71,22 +70,22 @@ int main(int _argc, char* _argv[])
 
 	//Parse command line parameters.
 	//#TODO parse command line parameters.
-	
-	//Initalize the Input Manager.
-	DragonStone::InputEventManager inputEventManager;
-	inputEventManager.initialize();
 
 	//Create the game window.
 	GameWindow gameWindow;
 
 	//Initalize the window with the default variables.
 	gameWindow.initialize();
+	
+	//Initalize the Input Manager.
+	DragonStone::InputManager inputManager;
+	inputManager.Initalize(&gameWindow);
 
 	//Create game variable.
 	DragonStone::IGame* game = new ExampleApplication();
 	
 	//Initalize game, pass in window.
-	game->Initalize(gameWindow);
+	game->Initalize(&gameWindow);
 
 	//Create a clock to calculate deltaTime.
 	sf::Clock clock;
@@ -134,11 +133,6 @@ int main(int _argc, char* _argv[])
 				
 				default:
 				{
-					DragonStone::InputEvent inputEvent;
-					if(inputEventManager.pollEvent(event, inputEvent))
-					{
-						game->pollInput(inputEvent);
-					}
 					break;
 				}
 			}

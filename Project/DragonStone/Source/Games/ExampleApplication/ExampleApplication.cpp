@@ -28,20 +28,15 @@ ExampleApplication::~ExampleApplication(void)
 	
 }
 
-const bool ExampleApplication::Initalize(GameWindow& _gameWindow)
+const bool ExampleApplication::Initalize(GameWindow* _gameWindow)
 {
-	this->gameWindow = &_gameWindow;
+	this->gameWindow = _gameWindow;
 	this->gameWindow->setTitle("Test Application");
 	
 	return true;
 }
 
 const bool ExampleApplication::Shutdown(void)
-{
-	return true;
-}
-
-const bool ExampleApplication::pollInput(const DragonStone::InputEvent& _inputEvent)
 {
 	return true;
 }

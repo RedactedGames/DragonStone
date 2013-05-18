@@ -1,6 +1,6 @@
 /*
  * 0===========================================================================0
- * | InputEvent.h                                                              |
+ * | InputEventManager.h                                                       |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
  * |   Author        : Joseph Stuhr                                            |
  * |   E-mail        : JpDeathBlade@gmail.com                                  |
@@ -37,19 +37,42 @@
  * 0===========================================================================0
  */
 
-#ifndef  DRAGONSTONE_INPUTEVENT_H_		// Check to see if this .h is defined
-#define  DRAGONSTONE_INPUTEVENT_H_		//  if not, define it
+#ifndef  DRAGONSTONE_INPUTMANAGER_H_		// Check to see if this .h is defined
+#define  DRAGONSTONE_INPUTMANAGER_H_		//  if not, define it
+
+/* 0===========================================================================0
+ * | Includes                                                                  |
+ * 0===========================================================================0
+ */
+#include <SFML/Window.hpp>
+#include "MouseButton.h"
+#include "../Window/GameWindow.h"
 
 namespace DragonStone
 {
-	class InputEvent
-	{
+	class InputManager
+	{	
+		protected:
+			GameWindow* gameWindow;
+		
 		public:
-			InputEvent(void);
-			InputEvent(const InputEvent& _ref);
-			InputEvent& operator=(const InputEvent& _ref);
-			~InputEvent(void);
+			InputManager(void);
+			InputManager(const InputManager& _ref);
+			InputManager& operator=(const InputManager& _ref);
+			~InputManager(void);
+			
+			void Initalize(GameWindow* _gameWindow);
+			
+/*          0==================================================================0
+ *          | Mouse                                                            |
+ *          0==================================================================0
+ */
+			const bool isMouseButtonPressed(DragonStone::MouseButton _button) const;
+			const sf::Vector2i getMouseGlobalPosition(void) const;
+			const sf::Vector2i getMouseLocalPosition(void) const;
+			void setMouseGlobalPosition(const sf::Vector2i& _position);
+			void setMouseLocalPosition(const sf::Vector2i& _position);
 	};
 }
 
-#endif //DRAGONSTONE_INPUTEVENT_H_
+#endif //DRAGONSTONE_INPUTMANAGER_H_

@@ -11,9 +11,8 @@ class ExampleApplication : public DragonStone::IGame
 		ExampleApplication& operator=(const ExampleApplication& _ref);
 		~ExampleApplication(void);
 		
-		const bool Initalize(GameWindow& _gameWindow);
+		const bool Initalize(GameWindow* _gameWindow);
 		const bool Shutdown(void);
-		const bool pollInput(const DragonStone::InputEvent& _inputEvent);
 		const bool Execute(const double _deltaTime);
 		const std::string toString(void) const;
 		

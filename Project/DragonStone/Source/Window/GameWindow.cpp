@@ -145,6 +145,11 @@ const bool GameWindow::isOpen(void) const
 	return this->window->isOpen();
 }
 
+const sf::RenderWindow* GameWindow::getWindow(void) const
+{
+	return this->window;
+}
+
 /*
  * 0===========================================================================0
  * | Setters                                                                   |

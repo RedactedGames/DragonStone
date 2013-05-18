@@ -40,6 +40,10 @@
 #ifndef  DRAGONSTONE_RESULT_H_		// Check to see if this .h is defined
 #define  DRAGONSTONE_RESULT_H_		//  if not, define it
 
+/* 0===========================================================================0
+ * | Namespace                                                                 |
+ * 0===========================================================================0
+ */
 namespace DragonStone
 {
 	typedef enum
