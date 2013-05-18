@@ -53,3 +53,19 @@ void DragonStone::InputManager::setMouseLocalPosition(const sf::Vector2i& _posit
 {
 	sf::Mouse::setPosition(_position, *this->gameWindow->getWindow());
 }
+
+/* 0===========================================================================0
+ * | Keyboard                                                                  |
+ * 0===========================================================================0
+ */
+const bool DragonStone::InputManager::isKeyboardButtonPressed(DragonStone::KeyboardKey _key) const
+{
+	if(this->gameWindow->hasFocus())
+	{
+		return sf::Keyboard::isKeyPressed((sf::Keyboard::Key)_key);
+	}
+	else
+	{
+		return false;
+	}
+}

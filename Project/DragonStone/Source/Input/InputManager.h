@@ -46,6 +46,7 @@
  */
 #include <SFML/Window.hpp>
 #include "MouseButton.h"
+#include "KeyboardKey.h"
 #include "../Window/GameWindow.h"
 
 namespace DragonStone
@@ -72,6 +73,13 @@ namespace DragonStone
 			const sf::Vector2i getMouseLocalPosition(void) const;
 			void setMouseGlobalPosition(const sf::Vector2i& _position);
 			void setMouseLocalPosition(const sf::Vector2i& _position);
+			
+/*          0==================================================================0
+ *          | Keyboard                                                         |
+ *          0==================================================================0
+ */
+			const bool isKeyboardButtonPressed(DragonStone::KeyboardKey _key) const;
+		 
 	};
 }
 
