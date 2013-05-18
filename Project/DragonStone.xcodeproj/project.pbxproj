@@ -50,6 +50,7 @@
 		0C4E128C1740980D00A8E4BE /* IGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IGame.cpp; sourceTree = "<group>"; };
 		0C64ABE01741876700379DD3 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		0C64ABE11741DA1600379DD3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		0CBFFA9C1747F16E002FC00F /* KeyboardKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardKey.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +212,7 @@
 				0C47DC1B1746AC9500706BC0 /* InputManager.cpp */,
 				0C47DC1C1746AC9500706BC0 /* InputManager.h */,
 				0C47DC2617472B3400706BC0 /* MouseButton.h */,
+				0CBFFA9C1747F16E002FC00F /* KeyboardKey.h */,
 			);
 			path = Input;
 			sourceTree = "<group>";
