@@ -1,47 +1,47 @@
 #include "IGame.h"
 
-IGame::IGame(void)
+DragonStone::IGame::IGame(void)
 {
 	gameWindow = NULL;
 }
 
-IGame::IGame(const IGame& _ref)
+DragonStone::IGame::IGame(const IGame& _ref)
 {
 	gameWindow = _ref.gameWindow;
 }
 
-IGame& IGame::operator=(const IGame& _ref)
+DragonStone::IGame& DragonStone::IGame::operator=(const IGame& _ref)
 {
 	gameWindow = _ref.gameWindow;
 	return *this;
 }
 
-IGame::~IGame(void)
+DragonStone::IGame::~IGame(void)
 {
 	gameWindow = NULL;
 }
 
-const bool IGame::Initalize(GameWindow& _gameWindow)
+const bool DragonStone::IGame::Initalize(GameWindow& _gameWindow)
 {
 	return false;
 }
 
-const bool IGame::Shutdown(void)
+const bool DragonStone::IGame::Shutdown(void)
 {
 	return false;
 }
 
-const bool IGame::pollEvent(sf::Event& _event)
+const bool DragonStone::IGame::pollInput(const DragonStone::InputEvent& _inputEvent)
 {
 	return false;
 }
 
-const bool IGame::Execute(const double _deltaTime)
+const bool DragonStone::IGame::Execute(const double _deltaTime)
 {
 	return false;
 }
 
-const std::string IGame::toString(void) const
+const std::string DragonStone::IGame::toString(void) const
 {
 	return "IGame";
 }

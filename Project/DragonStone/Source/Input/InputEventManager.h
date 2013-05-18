@@ -1,6 +1,6 @@
 /*
  * 0===========================================================================0
- * | main.cpp                                                                  |
+ * | InputEventManager.h                                                       |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
  * |   Author        : Joseph Stuhr                                            |
  * |   E-mail        : JpDeathBlade@gmail.com                                  |
@@ -9,7 +9,7 @@
  * 0=====0===============================================================0=====0
  * | Code Description:                                                         |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
- * |   The main entry point of the application.                                |
+ * |   Manages all input from mouse, keyboard, and joysticks.                  |
  * 0=====0===============================================================0=====0
  *       |                                                               |
  * 0=====0===============================================================0=====0
@@ -36,117 +36,34 @@
  * | 3. This notice may not be removed or altered from any source distribution.|
  * 0===========================================================================0
  */
- 
+
+#ifndef  DRAGONSTONE_INPUTEVENTMANAGER_H_		// Check to see if this .h is defined
+#define  DRAGONSTONE_INPUTEVENTMANAGER_H_		//  if not, define it
+
 /* 0===========================================================================0
  * | Includes                                                                  |
  * 0===========================================================================0
  */
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
-#include <SFML/Network.hpp>
-#include "Config.h"
-#include "Result.h"
-#include "Input/InputEvent.h"
-#include "Input/InputEventManager.h"
-#include "Window/GameWindow.h"
+#include <SFML/Window.hpp>
+#include "InputEvent.h"
 
-#include "Games/ExampleApplication/ExampleApplication.h"
-
-
-#ifdef DS_PLATFORM_WINDOWS
-	#include "Platform_Windows/ResourcePath.h"
-#endif
-#ifdef DS_PLATFORM_MACOS
-	#include "Platform_OSX/ResourcePath.hpp"
-#endif
-#ifdef DS_PLATFORM_LINUX
-	#include "Platform_LINUX/ResourcePath.h"
-#endif
-
-
-int main(int _argc, char* _argv[])
+namespace DragonStone
 {
-	//Load engine config file.
-	//#TODO load engine config file.
-
-	//Parse command line parameters.
-	//#TODO parse command line parameters.
-	
-	//Initalize the Input Manager.
-	DragonStone::InputEventManager inputEventManager;
-	inputEventManager.initialize();
-
-	//Create the game window.
-	GameWindow gameWindow;
-
-	//Initalize the window with the default variables.
-	gameWindow.initialize();
-
-	//Create game variable.
-	DragonStone::IGame* game = new ExampleApplication();
-	
-	//Initalize game, pass in window.
-	game->Initalize(gameWindow);
-
-	//Create a clock to calculate deltaTime.
-	sf::Clock clock;
-	
-	//Game Loop
-	bool running = true;
-	while(running)
+	class InputEventManager
 	{
-		gameWindow.clear();
+		protected:
+			//GameWindow* gameWindow;
 		
-		//Get the elapsed time.
-		sf::Time elapsed = clock.restart();
-		double deltaTime = (elapsed.asMilliseconds() * 0.001);
-		
-		// Process events
-		sf::Event event;
-		while (gameWindow.pollEvent(event))
-		{
-			switch(event.type)
-			{
-				case sf::Event::Closed:
-				{
-					game->Shutdown();
-					running = false;
-					break;
-				}
-				
-				case sf::Event::Resized:
-				{
-					gameWindow.setSize(sf::Vector2u(event.size.width, event.size.height));
-					break;
-				}
-				
-				case sf::Event::LostFocus:
-				{
-					gameWindow.setFocus(false);
-					break;
-				}
-				
-				case sf::Event::GainedFocus:
-				{
-					gameWindow.setFocus(true);
-					break;
-				}
-				
-				default:
-				{
-					DragonStone::InputEvent inputEvent;
-					if(inputEventManager.pollEvent(event, inputEvent))
-					{
-						game->pollInput(inputEvent);
-					}
-					break;
-				}
-			}
-		}
-		
-		game->Execute(deltaTime);
-		gameWindow.display();
-	}
-    
-    return DragonStone::OK;
+		public:
+			InputEventManager(void);
+			InputEventManager(const InputEventManager& _ref);
+			InputEventManager& operator=(const InputEventManager& _ref);
+			~InputEventManager(void);
+			
+			void initialize(void);
+			
+			const bool pollEvent(const sf::Event& _sfEvent, DragonStone::InputEvent& _inputEvent);
+	};
 }
+
+#endif //DRAGONSTONE_INPUTEVENTMANAGER_H_

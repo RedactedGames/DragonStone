@@ -31,7 +31,6 @@ ExampleApplication::~ExampleApplication(void)
 const bool ExampleApplication::Initalize(GameWindow& _gameWindow)
 {
 	this->gameWindow = &_gameWindow;
-	
 	this->gameWindow->setTitle("Test Application");
 	
 	return true;
@@ -42,15 +41,13 @@ const bool ExampleApplication::Shutdown(void)
 	return true;
 }
 
-const bool ExampleApplication::pollEvent(sf::Event& _event)
+const bool ExampleApplication::pollInput(const DragonStone::InputEvent& _inputEvent)
 {
 	return true;
 }
 
 const bool ExampleApplication::Execute(const double _deltaTime)
 {	
-	this->Input(_deltaTime);
-	
 	this->Update(_deltaTime);
 	
 	this->Render(_deltaTime);
@@ -60,11 +57,6 @@ const bool ExampleApplication::Execute(const double _deltaTime)
 const std::string ExampleApplication::toString(void) const
 {
 	return "Test Application";
-}
-
-const bool ExampleApplication::Input(const double _deltaTime)
-{
-	return true;
 }
 
 const bool ExampleApplication::Update(const double _deltaTime)

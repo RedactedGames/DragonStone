@@ -62,6 +62,10 @@ void GameWindow::initialize(void)
 		this->window->setVerticalSyncEnabled(this->vsync);
 		this->window->setFramerateLimit(this->framerateLimit);
 	}
+	else
+	{
+		//#TODO: Some error or something...
+	}
 }
 
 void GameWindow::clear(void)
