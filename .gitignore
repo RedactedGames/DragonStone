@@ -49,6 +49,7 @@ Icon
 #########
 .*
 !.gitignore
+!.gitkeep
 *~
 
 # Compiled Object files
