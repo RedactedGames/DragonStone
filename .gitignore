@@ -1,11 +1,72 @@
-#OSX
-*.DS_Store
-
-#Windows
-Project/x64/
-Project/DragonStone/x64/
+###############
+# DragonStone #
+###############
 
 #Ignore all game files
-Project/DragonStone/Source/Games/*
+Source/Game/*
+Resource/Game/*
 #Except...
-!Project/DragonStone/Source/Games/ExampleApplication/
+!Source/Game/GameJam2014/
+!Resource/Game/GameJam2014/
+
+###########
+# Windows #
+###########
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Executables
+*.exe
+
+############
+# Mac OS X #
+############
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Executables
+*.app
+
+#########
+# Linux #
+#########
+.*
+!.gitignore
+*~
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.out
