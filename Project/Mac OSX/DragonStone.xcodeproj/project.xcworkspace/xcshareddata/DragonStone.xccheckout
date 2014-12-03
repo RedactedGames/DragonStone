@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>41356040-A130-483E-938E-DB1B71291913</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DragonStone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F21745F6E4F204447AF7C164C80A32941F030967</key>
+		<string>https://github.com/RedactedGames/DragonStone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Project/Mac OSX/DragonStone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F21745F6E4F204447AF7C164C80A32941F030967</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RedactedGames/DragonStone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F21745F6E4F204447AF7C164C80A32941F030967</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F21745F6E4F204447AF7C164C80A32941F030967</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DragonStone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
