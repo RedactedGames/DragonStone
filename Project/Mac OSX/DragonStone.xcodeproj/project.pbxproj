@@ -13,6 +13,8 @@
 		0C5535D71A2EDFD00068F888 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535D61A2EDFD00068F888 /* nice_music.ogg */; };
 		0C5535D91A2EDFD00068F888 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535D81A2EDFD00068F888 /* sansation.ttf */; };
 		0C5535DB1A2EDFD00068F888 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535DA1A2EDFD00068F888 /* icon.png */; };
+		0C5535FF1A2EE60C0068F888 /* Point2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C5535FD1A2EE60C0068F888 /* Point2D.cpp */; };
+		0C5D22AA1A2FDD7400C8EDA1 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C5D22A81A2FDD7400C8EDA1 /* Window.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,10 @@
 		0C5535D61A2EDFD00068F888 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../../Resources/Engine/Audio/nice_music.ogg; sourceTree = SOURCE_ROOT; };
 		0C5535D81A2EDFD00068F888 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../../Resources/Engine/Fonts/sansation.ttf; sourceTree = SOURCE_ROOT; };
 		0C5535DA1A2EDFD00068F888 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../Resources/Engine/Textures/icon.png; sourceTree = SOURCE_ROOT; };
+		0C5535FD1A2EE60C0068F888 /* Point2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point2D.cpp; path = ../../Source/Engine/Geometry/2D/Point2D.cpp; sourceTree = SOURCE_ROOT; };
+		0C5535FE1A2EE60C0068F888 /* Point2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point2D.h; path = ../../Source/Engine/Geometry/2D/Point2D.h; sourceTree = SOURCE_ROOT; };
+		0C5D22A81A2FDD7400C8EDA1 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		0C5D22A91A2FDD7400C8EDA1 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,8 @@
 		0C5535EC1A2EE0CD0068F888 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0C5535F21A2EE5330068F888 /* CodeProfiler */,
+				0C5535F11A2EE52B0068F888 /* Debugger */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -191,6 +199,9 @@
 		0C5535EE1A2EE0DC0068F888 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				0C5D22A71A2FDD5E00C8EDA1 /* Window */,
+				0C5535F41A2EE55F0068F888 /* Geometry */,
+				0C5535F31A2EE5550068F888 /* AI */,
 				0C5535EF1A2EE0F10068F888 /* Platform */,
 			);
 			name = Engine;
@@ -212,6 +223,63 @@
 			);
 			name = OSX;
 			sourceTree = "<group>";
+		};
+		0C5535F11A2EE52B0068F888 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Debugger;
+			sourceTree = "<group>";
+		};
+		0C5535F21A2EE5330068F888 /* CodeProfiler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CodeProfiler;
+			sourceTree = "<group>";
+		};
+		0C5535F31A2EE5550068F888 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AI;
+			sourceTree = "<group>";
+		};
+		0C5535F41A2EE55F0068F888 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				0C5535F51A2EE5680068F888 /* 2D */,
+				0C5535F61A2EE56F0068F888 /* 3D */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+		0C5535F51A2EE5680068F888 /* 2D */ = {
+			isa = PBXGroup;
+			children = (
+				0C5535FD1A2EE60C0068F888 /* Point2D.cpp */,
+				0C5535FE1A2EE60C0068F888 /* Point2D.h */,
+			);
+			name = 2D;
+			path = ../../Source/Engine/Geometry/2D;
+			sourceTree = SOURCE_ROOT;
+		};
+		0C5535F61A2EE56F0068F888 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3D;
+			sourceTree = "<group>";
+		};
+		0C5D22A71A2FDD5E00C8EDA1 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				0C5D22A81A2FDD7400C8EDA1 /* Window.cpp */,
+				0C5D22A91A2FDD7400C8EDA1 /* Window.h */,
+			);
+			name = Window;
+			path = ../../Source/Engine/Window;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -302,6 +370,8 @@
 			files = (
 				0C5535D21A2EDFD00068F888 /* main.cpp in Sources */,
 				0C5535CF1A2EDFD00068F888 /* ResourcePath.mm in Sources */,
+				0C5535FF1A2EE60C0068F888 /* Point2D.cpp in Sources */,
+				0C5D22AA1A2FDD7400C8EDA1 /* Window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

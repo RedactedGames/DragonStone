@@ -15,7 +15,7 @@
  * 0=====0===============================================================0=====0
  * | License:                                                                  |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
- * | DragonStone - Copyright (c) 2014 [Redacted] Games. All rights reserved.   |
+ * | DragonStone - Copyright (c) 2015 [Redacted] Games. All rights reserved.   |
  * |                                                                           |
  * | This software is provided 'as-is', without any express or implied warranty|
  * | In no event will the authors be held liable for any damages arising from  |
@@ -155,7 +155,8 @@ const bool DragonStone::Point2D::intersects(const DragonStone::Point2D& _point) 
     }
 }
 
-/*      0======================================================================0
+/*
+ *      0======================================================================0
  *      | Getters                                                              |
  *      0======================================================================0
  */
@@ -174,7 +175,8 @@ const std::string DragonStone::Point2D::toString(void) const
     return "Point - X: " + std::to_string(this->m_X) + " Y: " + std::to_string(this->m_Y);
 }
 
-/*      0======================================================================0
+/*
+ *      0======================================================================0
  *      | Setters                                                              |
  *      0======================================================================0
  */

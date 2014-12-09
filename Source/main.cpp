@@ -14,43 +14,53 @@
 // method resourcePath() from ResourcePath.hpp
 //
 
+#include "Config.h"
+#include "Result.h"
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 
-// Here is a small helper for you ! Have a look.
-#include "ResourcePath.hpp"
+//Including the correct resource path.
+#ifdef DS_PLATFORM_WINDOWS
+    #include "Engine/Platform/Windows/ResourcePath.h"
+#endif
+#ifdef DS_PLATFORM_MACOS
+    #include "Engine/Platform/OSX/ResourcePath.hpp"
+#endif
+#ifdef DS_PLATFORM_LINUX
+    #include "Engine/Platform/Linux/ResourcePath.h"
+#endif
 
-int main(int, char const**)
+int main(int _argc, char* _argv[])
 {
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 
     // Set the Icon
     sf::Image icon;
-    if (!icon.loadFromFile(resourcePath() + "icon.png")) {
-        return EXIT_FAILURE;
+    if (!icon.loadFromFile(resourcePath() + "Engine/Textures/icon.png")) {
+        return 1;
     }
     window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 
     // Load a sprite to display
     sf::Texture texture;
-    if (!texture.loadFromFile(resourcePath() + "cute_image.jpg")) {
-        return EXIT_FAILURE;
+    if (!texture.loadFromFile(resourcePath() + "Engine/Textures/cute_image.jpg")) {
+        return 2;
     }
     sf::Sprite sprite(texture);
 
     // Create a graphical text to display
     sf::Font font;
-    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-        return EXIT_FAILURE;
+    if (!font.loadFromFile(resourcePath() + "Engine/Fonts/sansation.ttf")) {
+        return 3;
     }
     sf::Text text("Hello SFML", font, 50);
     text.setColor(sf::Color::Black);
 
     // Load a music to play
     sf::Music music;
-    if (!music.openFromFile(resourcePath() + "nice_music.ogg")) {
-        return EXIT_FAILURE;
+    if (!music.openFromFile(resourcePath() + "Engine/Audio/nice_music.ogg")) {
+        return 4;
     }
 
     // Play the music
@@ -87,5 +97,5 @@ int main(int, char const**)
         window.display();
     }
     
-    return EXIT_SUCCESS;
+    return DragonStone::OK;
 }

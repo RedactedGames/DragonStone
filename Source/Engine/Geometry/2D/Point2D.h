@@ -15,7 +15,7 @@
  * 0=====0===============================================================0=====0
  * | License:                                                                  |
  * |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |
- * | DragonStone - Copyright (c) 2014 [Redacted] Games. All rights reserved.   |
+ * | DragonStone - Copyright (c) 2015 [Redacted] Games. All rights reserved.   |
  * |                                                                           |
  * | This software is provided 'as-is', without any express or implied warranty|
  * | In no event will the authors be held liable for any damages arising from  |
@@ -73,7 +73,8 @@ namespace DragonStone
             const bool intersects(const float _x, const float _y) const;
             const bool intersects(const Point2D& _point) const;
 
-/*      0======================================================================0
+/*
+ *      0======================================================================0
  *      | Overloads                                                            |
  *      0======================================================================0
  */
@@ -83,16 +84,19 @@ namespace DragonStone
             Point2D& operator+=(const Point2D& _ref);
             Point2D& operator-(const Point2D& _ref);
             Point2D& operator-=(const Point2D& _ref);
-
-/*      0======================================================================0
+		
+/*
+ *      0======================================================================0
  *      | Getters                                                              |
  *      0======================================================================0
  */
+
             const float getX(void) const;
             const float getY(void) const;
             const std::string toString(void) const;
 
-/*      0======================================================================0
+/*
+ *      0======================================================================0
  *      | Setters                                                              |
  *      0======================================================================0
  */

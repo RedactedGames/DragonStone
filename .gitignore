@@ -5,6 +5,8 @@
 #Ignore all game files
 Source/Game/*
 Resource/Game/*
+Project/Windows/DragonStone/Debug/*
+Project/Windows/DragonStone/Release/*
 #Except...
 !Source/Game/GameJam2014/
 !Resource/Game/GameJam2014/
@@ -25,6 +27,8 @@ $RECYCLE.BIN/
 
 # Executables
 *.exe
+*.ilk
+*.pdb
 
 ############
 # Mac OS X #
@@ -61,7 +65,6 @@ Icon
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Compiled Static libraries
 *.lai
