@@ -7,34 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C5535CF1A2EDFD00068F888 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C5535CE1A2EDFD00068F888 /* ResourcePath.mm */; };
-		0C5535D21A2EDFD00068F888 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C5535D11A2EDFD00068F888 /* main.cpp */; };
-		0C5535D51A2EDFD00068F888 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535D41A2EDFD00068F888 /* cute_image.jpg */; };
-		0C5535D71A2EDFD00068F888 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535D61A2EDFD00068F888 /* nice_music.ogg */; };
-		0C5535D91A2EDFD00068F888 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535D81A2EDFD00068F888 /* sansation.ttf */; };
-		0C5535DB1A2EDFD00068F888 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5535DA1A2EDFD00068F888 /* icon.png */; };
-		0C5535FF1A2EE60C0068F888 /* Point2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C5535FD1A2EE60C0068F888 /* Point2D.cpp */; };
-		0C5D22AA1A2FDD7400C8EDA1 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C5D22A81A2FDD7400C8EDA1 /* Window.cpp */; };
+		0C5A8AB61A44ED9200F2A676 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A8AB51A44ED9200F2A676 /* main.cpp */; };
+		0CCA47B11A44F0F80078F249 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA47B01A44F0F80078F249 /* ResourcePath.mm */; };
+		0CCA54631A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51A91A44F4060078F249 /* .gitkeep */; };
+		0CCA54641A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51AB1A44F4060078F249 /* .gitkeep */; };
+		0CCA54651A44F4080078F249 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51AC1A44F4060078F249 /* nice_music.ogg */; };
+		0CCA54661A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51AE1A44F4060078F249 /* .gitkeep */; };
+		0CCA54671A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51B01A44F4060078F249 /* .gitkeep */; };
+		0CCA54681A44F4080078F249 /* Config.ini in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51B11A44F4060078F249 /* Config.ini */; };
+		0CCA54691A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51B31A44F4060078F249 /* .gitkeep */; };
+		0CCA546A1A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51B51A44F4060078F249 /* .gitkeep */; };
+		0CCA546C1A44F4080078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA51B91A44F4060078F249 /* .gitkeep */; };
+		0CCA568D1A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54501A44F4080078F249 /* .gitkeep */; };
+		0CCA568E1A44F4090078F249 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54511A44F4080078F249 /* sansation.ttf */; };
+		0CCA568F1A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54531A44F4080078F249 /* .gitkeep */; };
+		0CCA56901A44F4090078F249 /* Icon_0oS.ico in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54541A44F4080078F249 /* Icon_0oS.ico */; };
+		0CCA56911A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54561A44F4080078F249 /* .gitkeep */; };
+		0CCA56921A44F4090078F249 /* DragonStone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54571A44F4080078F249 /* DragonStone-Info.plist */; };
+		0CCA56931A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54591A44F4080078F249 /* .gitkeep */; };
+		0CCA56941A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA545B1A44F4080078F249 /* .gitkeep */; };
+		0CCA56951A44F4090078F249 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA545C1A44F4080078F249 /* cute_image.jpg */; };
+		0CCA56961A44F4090078F249 /* Error.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA545D1A44F4080078F249 /* Error.png */; };
+		0CCA56971A44F4090078F249 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA545E1A44F4080078F249 /* icon.png */; };
+		0CCA56981A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54601A44F4080078F249 /* .gitkeep */; };
+		0CCA56991A44F4090078F249 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA54621A44F4080078F249 /* .gitkeep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C5535C91A2EDFD00068F888 /* DragonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C5535CD1A2EDFD00068F888 /* DragonStone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DragonStone-Info.plist"; path = "../../Resources/Engine/Plist/DragonStone-Info.plist"; sourceTree = SOURCE_ROOT; };
-		0C5535CE1A2EDFD00068F888 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourcePath.mm; path = ../../Source/Engine/Platform/OSX/ResourcePath.mm; sourceTree = SOURCE_ROOT; };
-		0C5535D01A2EDFD00068F888 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ResourcePath.hpp; path = ../../Source/Engine/Platform/OSX/ResourcePath.hpp; sourceTree = SOURCE_ROOT; };
-		0C5535D11A2EDFD00068F888 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../Source/main.cpp; sourceTree = SOURCE_ROOT; };
-		0C5535D41A2EDFD00068F888 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../../Resources/Engine/Textures/cute_image.jpg; sourceTree = SOURCE_ROOT; };
-		0C5535D61A2EDFD00068F888 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../../Resources/Engine/Audio/nice_music.ogg; sourceTree = SOURCE_ROOT; };
-		0C5535D81A2EDFD00068F888 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../../Resources/Engine/Fonts/sansation.ttf; sourceTree = SOURCE_ROOT; };
-		0C5535DA1A2EDFD00068F888 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../Resources/Engine/Textures/icon.png; sourceTree = SOURCE_ROOT; };
-		0C5535FD1A2EE60C0068F888 /* Point2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point2D.cpp; path = ../../Source/Engine/Geometry/2D/Point2D.cpp; sourceTree = SOURCE_ROOT; };
-		0C5535FE1A2EE60C0068F888 /* Point2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point2D.h; path = ../../Source/Engine/Geometry/2D/Point2D.h; sourceTree = SOURCE_ROOT; };
-		0C5D22A81A2FDD7400C8EDA1 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
-		0C5D22A91A2FDD7400C8EDA1 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		0C5A8AAD1A44ED9200F2A676 /* DragonStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5A8AB11A44ED9200F2A676 /* DragonStone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DragonStone-Info.plist"; path = "../../Resources/Engine/Plist/DragonStone-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0C5A8AB51A44ED9200F2A676 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../Source/main.cpp; sourceTree = SOURCE_ROOT; };
+		0CCA47AF1A44F0F80078F249 /* ResourcePath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		0CCA47B01A44F0F80078F249 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		0CCA51A91A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA51AB1A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA51AC1A44F4060078F249 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		0CCA51AE1A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA51B01A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA51B11A44F4060078F249 /* Config.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Config.ini; sourceTree = "<group>"; };
+		0CCA51B31A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA51B51A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA51B91A44F4060078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA54501A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA54511A44F4080078F249 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		0CCA54531A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA54541A44F4080078F249 /* Icon_0oS.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = Icon_0oS.ico; sourceTree = "<group>"; };
+		0CCA54561A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA54571A44F4080078F249 /* DragonStone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DragonStone-Info.plist"; sourceTree = "<group>"; };
+		0CCA54591A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA545B1A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA545C1A44F4080078F249 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		0CCA545D1A44F4080078F249 /* Error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Error.png; sourceTree = "<group>"; };
+		0CCA545E1A44F4080078F249 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0CCA54601A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0CCA54621A44F4080078F249 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C5535C51A2EDFD00068F888 /* Frameworks */ = {
+		0C5A8AA91A44ED9200F2A676 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,254 +74,236 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C5535BF1A2EDFD00068F888 = {
+		0C5A8AA31A44ED9200F2A676 = {
 			isa = PBXGroup;
 			children = (
-				0C5535CB1A2EDFD00068F888 /* DragonStone */,
-				0C5535CA1A2EDFD00068F888 /* Products */,
+				0C5A8AAF1A44ED9200F2A676 /* DragonStone */,
+				0C5A8AAE1A44ED9200F2A676 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0C5535CA1A2EDFD00068F888 /* Products */ = {
+		0C5A8AAE1A44ED9200F2A676 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C5535C91A2EDFD00068F888 /* DragonStone.app */,
+				0C5A8AAD1A44ED9200F2A676 /* DragonStone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C5535CB1A2EDFD00068F888 /* DragonStone */ = {
+		0C5A8AAF1A44ED9200F2A676 /* DragonStone */ = {
 			isa = PBXGroup;
 			children = (
-				0C5535EB1A2EE0C00068F888 /* Source */,
-				0C5535D31A2EDFD00068F888 /* Resources */,
-				0C5535CC1A2EDFD00068F888 /* Supporting Files */,
+				0CCA51A71A44F3EE0078F249 /* Resources */,
+				0CCA47A71A44EE570078F249 /* Utilities */,
+				0CCA47A61A44EE520078F249 /* Game */,
+				0CCA47A51A44EE490078F249 /* Engine */,
+				0C5A8AB51A44ED9200F2A676 /* main.cpp */,
+				0C5A8AB01A44ED9200F2A676 /* Supporting Files */,
 			);
 			path = DragonStone;
 			sourceTree = "<group>";
 		};
-		0C5535CC1A2EDFD00068F888 /* Supporting Files */ = {
+		0C5A8AB01A44ED9200F2A676 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C5A8AB11A44ED9200F2A676 /* DragonStone-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C5535D31A2EDFD00068F888 /* Resources */ = {
+		0CCA47A51A44EE490078F249 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				0C5535E11A2EE0250068F888 /* Engine */,
-				0C5535E21A2EE02F0068F888 /* Game */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		0C5535E11A2EE0250068F888 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535EA1A2EE0920068F888 /* Audio */,
-				0C5535E91A2EE08A0068F888 /* Data */,
-				0C5535E81A2EE0780068F888 /* External Libraries */,
-				0C5535E71A2EE06F0068F888 /* Fonts */,
-				0C5535E61A2EE0660068F888 /* Icons */,
-				0C5535E51A2EE0580068F888 /* Plist */,
-				0C5535E41A2EE0520068F888 /* Shaders */,
-				0C5535E31A2EE0470068F888 /* Textures */,
+				0CCA47AD1A44F0500078F249 /* Platform */,
 			);
 			name = Engine;
 			sourceTree = "<group>";
 		};
-		0C5535E21A2EE02F0068F888 /* Game */ = {
+		0CCA47A61A44EE520078F249 /* Game */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Game;
 			sourceTree = "<group>";
 		};
-		0C5535E31A2EE0470068F888 /* Textures */ = {
+		0CCA47A71A44EE570078F249 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				0C5535DA1A2EDFD00068F888 /* icon.png */,
-				0C5535D41A2EDFD00068F888 /* cute_image.jpg */,
-			);
-			name = Textures;
-			sourceTree = "<group>";
-		};
-		0C5535E41A2EE0520068F888 /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Shaders;
-			sourceTree = "<group>";
-		};
-		0C5535E51A2EE0580068F888 /* Plist */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535CD1A2EDFD00068F888 /* DragonStone-Info.plist */,
-			);
-			name = Plist;
-			sourceTree = "<group>";
-		};
-		0C5535E61A2EE0660068F888 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Icons;
-			sourceTree = "<group>";
-		};
-		0C5535E71A2EE06F0068F888 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535D81A2EDFD00068F888 /* sansation.ttf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
-		0C5535E81A2EE0780068F888 /* External Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "External Libraries";
-			sourceTree = "<group>";
-		};
-		0C5535E91A2EE08A0068F888 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
-		0C5535EA1A2EE0920068F888 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535D61A2EDFD00068F888 /* nice_music.ogg */,
-			);
-			name = Audio;
-			sourceTree = "<group>";
-		};
-		0C5535EB1A2EE0C00068F888 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535EE1A2EE0DC0068F888 /* Engine */,
-				0C5535ED1A2EE0D70068F888 /* Game */,
-				0C5535EC1A2EE0CD0068F888 /* Utilities */,
-				0C5535D11A2EDFD00068F888 /* main.cpp */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		0C5535EC1A2EE0CD0068F888 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535F21A2EE5330068F888 /* CodeProfiler */,
-				0C5535F11A2EE52B0068F888 /* Debugger */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
 		};
-		0C5535ED1A2EE0D70068F888 /* Game */ = {
+		0CCA47AD1A44F0500078F249 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Game;
-			sourceTree = "<group>";
-		};
-		0C5535EE1A2EE0DC0068F888 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				0C5D22A71A2FDD5E00C8EDA1 /* Window */,
-				0C5535F41A2EE55F0068F888 /* Geometry */,
-				0C5535F31A2EE5550068F888 /* AI */,
-				0C5535EF1A2EE0F10068F888 /* Platform */,
-			);
-			name = Engine;
-			sourceTree = "<group>";
-		};
-		0C5535EF1A2EE0F10068F888 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535F01A2EE0FE0068F888 /* OSX */,
+				0CCA47AE1A44F0D20078F249 /* OSX */,
 			);
 			name = Platform;
 			sourceTree = "<group>";
 		};
-		0C5535F01A2EE0FE0068F888 /* OSX */ = {
+		0CCA47AE1A44F0D20078F249 /* OSX */ = {
 			isa = PBXGroup;
 			children = (
-				0C5535D01A2EDFD00068F888 /* ResourcePath.hpp */,
-				0C5535CE1A2EDFD00068F888 /* ResourcePath.mm */,
+				0CCA47AF1A44F0F80078F249 /* ResourcePath.hpp */,
+				0CCA47B01A44F0F80078F249 /* ResourcePath.mm */,
 			);
 			name = OSX;
-			sourceTree = "<group>";
-		};
-		0C5535F11A2EE52B0068F888 /* Debugger */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Debugger;
-			sourceTree = "<group>";
-		};
-		0C5535F21A2EE5330068F888 /* CodeProfiler */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CodeProfiler;
-			sourceTree = "<group>";
-		};
-		0C5535F31A2EE5550068F888 /* AI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = AI;
-			sourceTree = "<group>";
-		};
-		0C5535F41A2EE55F0068F888 /* Geometry */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535F51A2EE5680068F888 /* 2D */,
-				0C5535F61A2EE56F0068F888 /* 3D */,
-			);
-			name = Geometry;
-			sourceTree = "<group>";
-		};
-		0C5535F51A2EE5680068F888 /* 2D */ = {
-			isa = PBXGroup;
-			children = (
-				0C5535FD1A2EE60C0068F888 /* Point2D.cpp */,
-				0C5535FE1A2EE60C0068F888 /* Point2D.h */,
-			);
-			name = 2D;
-			path = ../../Source/Engine/Geometry/2D;
+			path = ../../Source/Engine/Platform/OSX;
 			sourceTree = SOURCE_ROOT;
 		};
-		0C5535F61A2EE56F0068F888 /* 3D */ = {
+		0CCA51A71A44F3EE0078F249 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0CCA51A81A44F4060078F249 /* Engine */,
+				0CCA545F1A44F4080078F249 /* Game */,
 			);
-			name = 3D;
+			name = Resources;
+			path = ../../Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		0CCA51A81A44F4060078F249 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA51A91A44F4060078F249 /* .gitkeep */,
+				0CCA51AA1A44F4060078F249 /* Audio */,
+				0CCA51AD1A44F4060078F249 /* Data */,
+				0CCA51B41A44F4060078F249 /* External Libraries */,
+				0CCA544F1A44F4080078F249 /* Fonts */,
+				0CCA54521A44F4080078F249 /* Icons */,
+				0CCA54551A44F4080078F249 /* Plist */,
+				0CCA54581A44F4080078F249 /* Shaders */,
+				0CCA545A1A44F4080078F249 /* Textures */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
-		0C5D22A71A2FDD5E00C8EDA1 /* Window */ = {
+		0CCA51AA1A44F4060078F249 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				0C5D22A81A2FDD7400C8EDA1 /* Window.cpp */,
-				0C5D22A91A2FDD7400C8EDA1 /* Window.h */,
+				0CCA51AB1A44F4060078F249 /* .gitkeep */,
+				0CCA51AC1A44F4060078F249 /* nice_music.ogg */,
 			);
-			name = Window;
-			path = ../../Source/Engine/Window;
-			sourceTree = SOURCE_ROOT;
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		0CCA51AD1A44F4060078F249 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA51AE1A44F4060078F249 /* .gitkeep */,
+				0CCA51AF1A44F4060078F249 /* CodeProfiler */,
+				0CCA51B11A44F4060078F249 /* Config.ini */,
+				0CCA51B21A44F4060078F249 /* Debugger */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CCA51AF1A44F4060078F249 /* CodeProfiler */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA51B01A44F4060078F249 /* .gitkeep */,
+			);
+			path = CodeProfiler;
+			sourceTree = "<group>";
+		};
+		0CCA51B21A44F4060078F249 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA51B31A44F4060078F249 /* .gitkeep */,
+			);
+			path = Debugger;
+			sourceTree = "<group>";
+		};
+		0CCA51B41A44F4060078F249 /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA51B51A44F4060078F249 /* .gitkeep */,
+				0CCA51B81A44F4060078F249 /* SFML_Mac OSX */,
+			);
+			path = "External Libraries";
+			sourceTree = "<group>";
+		};
+		0CCA51B81A44F4060078F249 /* SFML_Mac OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA51B91A44F4060078F249 /* .gitkeep */,
+			);
+			path = "SFML_Mac OSX";
+			sourceTree = "<group>";
+		};
+		0CCA544F1A44F4080078F249 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA54501A44F4080078F249 /* .gitkeep */,
+				0CCA54511A44F4080078F249 /* sansation.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0CCA54521A44F4080078F249 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA54531A44F4080078F249 /* .gitkeep */,
+				0CCA54541A44F4080078F249 /* Icon_0oS.ico */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		0CCA54551A44F4080078F249 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA54561A44F4080078F249 /* .gitkeep */,
+				0CCA54571A44F4080078F249 /* DragonStone-Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		0CCA54581A44F4080078F249 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA54591A44F4080078F249 /* .gitkeep */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		0CCA545A1A44F4080078F249 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA545B1A44F4080078F249 /* .gitkeep */,
+				0CCA545C1A44F4080078F249 /* cute_image.jpg */,
+				0CCA545D1A44F4080078F249 /* Error.png */,
+				0CCA545E1A44F4080078F249 /* icon.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		0CCA545F1A44F4080078F249 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA54601A44F4080078F249 /* .gitkeep */,
+				0CCA54611A44F4080078F249 /* GameJam2014 */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		0CCA54611A44F4080078F249 /* GameJam2014 */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA54621A44F4080078F249 /* .gitkeep */,
+			);
+			path = GameJam2014;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C5535C81A2EDFD00068F888 /* DragonStone */ = {
+		0C5A8AAC1A44ED9200F2A676 /* DragonStone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C5535DE1A2EDFD00068F888 /* Build configuration list for PBXNativeTarget "DragonStone" */;
+			buildConfigurationList = 0C5A8AC21A44ED9300F2A676 /* Build configuration list for PBXNativeTarget "DragonStone" */;
 			buildPhases = (
-				0C5535C41A2EDFD00068F888 /* Sources */,
-				0C5535C51A2EDFD00068F888 /* Frameworks */,
-				0C5535C61A2EDFD00068F888 /* Resources */,
-				0C5535C71A2EDFD00068F888 /* ShellScript */,
+				0C5A8AA81A44ED9200F2A676 /* Sources */,
+				0C5A8AA91A44ED9200F2A676 /* Frameworks */,
+				0C5A8AAA1A44ED9200F2A676 /* Resources */,
+				0C5A8AAB1A44ED9200F2A676 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -299,56 +311,74 @@
 			);
 			name = DragonStone;
 			productName = DragonStone;
-			productReference = 0C5535C91A2EDFD00068F888 /* DragonStone.app */;
+			productReference = 0C5A8AAD1A44ED9200F2A676 /* DragonStone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0C5535C01A2EDFD00068F888 /* Project object */ = {
+		0C5A8AA41A44ED9200F2A676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Redacted Games";
 				TargetAttributes = {
-					0C5535C81A2EDFD00068F888 = {
+					0C5A8AAC1A44ED9200F2A676 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 0C5535C31A2EDFD00068F888 /* Build configuration list for PBXProject "DragonStone" */;
+			buildConfigurationList = 0C5A8AA71A44ED9200F2A676 /* Build configuration list for PBXProject "DragonStone" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0C5535BF1A2EDFD00068F888;
-			productRefGroup = 0C5535CA1A2EDFD00068F888 /* Products */;
+			mainGroup = 0C5A8AA31A44ED9200F2A676;
+			productRefGroup = 0C5A8AAE1A44ED9200F2A676 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C5535C81A2EDFD00068F888 /* DragonStone */,
+				0C5A8AAC1A44ED9200F2A676 /* DragonStone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C5535C61A2EDFD00068F888 /* Resources */ = {
+		0C5A8AAA1A44ED9200F2A676 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5535DB1A2EDFD00068F888 /* icon.png in Resources */,
-				0C5535D91A2EDFD00068F888 /* sansation.ttf in Resources */,
-				0C5535D71A2EDFD00068F888 /* nice_music.ogg in Resources */,
-				0C5535D51A2EDFD00068F888 /* cute_image.jpg in Resources */,
+				0CCA56981A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA54651A44F4080078F249 /* nice_music.ogg in Resources */,
+				0CCA56941A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA568E1A44F4090078F249 /* sansation.ttf in Resources */,
+				0CCA56961A44F4090078F249 /* Error.png in Resources */,
+				0CCA54631A44F4080078F249 /* .gitkeep in Resources */,
+				0CCA56991A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA568F1A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA56901A44F4090078F249 /* Icon_0oS.ico in Resources */,
+				0CCA56911A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA56931A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA54681A44F4080078F249 /* Config.ini in Resources */,
+				0CCA54671A44F4080078F249 /* .gitkeep in Resources */,
+				0CCA54641A44F4080078F249 /* .gitkeep in Resources */,
+				0CCA54661A44F4080078F249 /* .gitkeep in Resources */,
+				0CCA56971A44F4090078F249 /* icon.png in Resources */,
+				0CCA568D1A44F4090078F249 /* .gitkeep in Resources */,
+				0CCA546C1A44F4080078F249 /* .gitkeep in Resources */,
+				0CCA54691A44F4080078F249 /* .gitkeep in Resources */,
+				0CCA56921A44F4090078F249 /* DragonStone-Info.plist in Resources */,
+				0CCA56951A44F4090078F249 /* cute_image.jpg in Resources */,
+				0CCA546A1A44F4080078F249 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C5535C71A2EDFD00068F888 /* ShellScript */ = {
+		0C5A8AAB1A44ED9200F2A676 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,46 +389,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This shell script simply copies required sfml dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# Are we building a project that uses framework or dylibs ?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert : not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $1 is a path\n{\n    test $# -eq 1\n    assert $? \"force_remove() requires one parameter\"\n    rm -fr \"$1\"\n    assert $? \"couldn't remove $1\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Frameworks\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1.2.dylib\"\n        force_remove \"$dest/libsfml-$1-d.2.dylib\"\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            copy \"/Library/Frameworks/sfml-$1.framework\" \"$dest/sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            copy \"/usr/local/lib/libsfml-$1-d.2.dylib\" \"$dest/libsfml-$1-d.2.dylib\"\n        else\n            copy \"/usr/local/lib/libsfml-$1.2.dylib\" \"$dest/libsfml-$1.2.dylib\"\n        fi\n\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy sndfile framework too\n            copy \"/Library/Frameworks/sndfile.framework\" \"$dest/sndfile.framework\"\n        fi\n\n        if [ \"$1\" = \"graphics\" ]\n        then\n            # copy freetype framework too\n            copy \"/Library/Frameworks/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert : not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app/Contents/Frameworks\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"/Library/Frameworks/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"/usr/local/lib/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"/usr/local/lib/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy sndfile framework too\n            copy \"/Library/Frameworks/sndfile.framework\" \"$dest/sndfile.framework\"\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            # copy freetype framework too\n            copy \"/Library/Frameworks/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C5535C41A2EDFD00068F888 /* Sources */ = {
+		0C5A8AA81A44ED9200F2A676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5535D21A2EDFD00068F888 /* main.cpp in Sources */,
-				0C5535CF1A2EDFD00068F888 /* ResourcePath.mm in Sources */,
-				0C5535FF1A2EE60C0068F888 /* Point2D.cpp in Sources */,
-				0C5D22AA1A2FDD7400C8EDA1 /* Window.cpp in Sources */,
+				0CCA47B11A44F0F80078F249 /* ResourcePath.mm in Sources */,
+				0C5A8AB61A44ED9200F2A676 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0C5535DC1A2EDFD00068F888 /* Debug */ = {
+		0C5A8AC01A44ED9300F2A676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = (
+					i386,
+					x86_64,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -407,7 +428,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -432,23 +453,20 @@
 			};
 			name = Debug;
 		};
-		0C5535DD1A2EDFD00068F888 /* Release */ = {
+		0C5A8AC11A44ED9300F2A676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = (
+					i386,
+					x86_64,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -457,7 +475,7 @@
 					/usr/local/lib/,
 					"$(inherited)",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -482,18 +500,46 @@
 			};
 			name = Release;
 		};
-		0C5535DF1A2EDFD00068F888 /* Debug */ = {
+		0C5A8AC31A44ED9300F2A676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "../../Resources/Engine/Plist/DragonStone-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jpdeathblade/Dropbox/Local,
+					Disk_JpDeathBlade/0,
+					of,
+					"Spades/C++/DragonStone/Resources/Engine/External",
+					Libraries/SFML_Windows/32bit/lib,
+					/Users/jpdeathblade/Dropbox/Local,
+					Disk_JpDeathBlade/0,
+					of,
+					"Spades/C++/DragonStone/Resources/Engine/External",
+					"Libraries/SFML_Windows/32bit/lib/static-std",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0C5535E01A2EDFD00068F888 /* Release */ = {
+		0C5A8AC41A44ED9300F2A676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "../../Resources/Engine/Plist/DragonStone-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jpdeathblade/Dropbox/Local,
+					Disk_JpDeathBlade/0,
+					of,
+					"Spades/C++/DragonStone/Resources/Engine/External",
+					Libraries/SFML_Windows/32bit/lib,
+					/Users/jpdeathblade/Dropbox/Local,
+					Disk_JpDeathBlade/0,
+					of,
+					"Spades/C++/DragonStone/Resources/Engine/External",
+					"Libraries/SFML_Windows/32bit/lib/static-std",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -501,25 +547,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C5535C31A2EDFD00068F888 /* Build configuration list for PBXProject "DragonStone" */ = {
+		0C5A8AA71A44ED9200F2A676 /* Build configuration list for PBXProject "DragonStone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C5535DC1A2EDFD00068F888 /* Debug */,
-				0C5535DD1A2EDFD00068F888 /* Release */,
+				0C5A8AC01A44ED9300F2A676 /* Debug */,
+				0C5A8AC11A44ED9300F2A676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C5535DE1A2EDFD00068F888 /* Build configuration list for PBXNativeTarget "DragonStone" */ = {
+		0C5A8AC21A44ED9300F2A676 /* Build configuration list for PBXNativeTarget "DragonStone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C5535DF1A2EDFD00068F888 /* Debug */,
-				0C5535E01A2EDFD00068F888 /* Release */,
+				0C5A8AC31A44ED9300F2A676 /* Debug */,
+				0C5A8AC41A44ED9300F2A676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0C5535C01A2EDFD00068F888 /* Project object */;
+	rootObject = 0C5A8AA41A44ED9200F2A676 /* Project object */;
 }
